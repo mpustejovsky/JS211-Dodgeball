@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dodge Ball</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="intro-sec">Welcome to the Dodge Ball Registration System</div>
+    <div id="signups">
+      List Of People
+      <button id="add" onclick="addPerson()">Add Person</button>
+      <ul id="people"></ul>
+
+      <button id="listPlay" onclick="listPeopleChoices()">List People</button>
+    </div>
+    <div id="registered">
+      <h4>Registered Dodge Ball Players</h4>
+      <ul id="players"></ul>
+    </div>
+    <div id="blueT">
+      <h4>Blue Team</h4>
+      <ul id="blue"></ul>
+    </div>
+    <div id="redT">
+      <h4>Red Team</h4>
+      <ul id="red"></ul>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please input data for player ranking</p>
+        <form id="frm1" action="">
+
+          <label for="canThrow">Ability to Throw Ball</label>
+          <select id="canThrow" name="canThrow">
+            <option value="1">Bad</option>
+            <option value="2">Some</option>
+            <option value="3">Average</option>
+            <option value="4">Good</option>
+            <option value="5">Great</option>
+          </select><br>
+          <label for="canDodge">Ability to Dodge Ball</label>
+          <select id="canDodge" name="canDodge">
+            <option value="1">Bad</option>
+            <option value="2">Some</option>
+            <option value="3">Average</option>
+            <option value="4">Good</option>
+            <option value="5">Great</option>
+          </select><br>
+          <label for="paid">Have fees been Paid</label>
+          <select id="paid" name="paid">
+            <option value="paid">paid</option>
+            <option value="owe">owe fees</option>
+          </select><br>
+          <label for="health">Are you good health to play</label>
+          <select id="health" name="health">
+            <option value="Injured">Injured</option>
+            <option value="No-Injury">No-Injury</option>
+          </select><br>
+
+          <label for="experience">How Many Years of dodge ball experience</label>
+          <select id="experience" name="experience">
+            <option value="1">0</option>
+            <option value="2">1-2</option>
+            <option value="3">2-3</option>
+            <option value="4">4-5</option>
+            <option value="5">5+</option>
+          </select><br>
+          <input type="text" name="fname" id='fname' value=""><br>
+        </form>
+
+
+
+        <button onclick="dodgeSkills()">Submit</button>
+      </div>
+    </div>
+
+    <div id="myModal2" class="modal2">
+
+      <!-- Modal content -->
+      <div class="modal-content2">
+        <span class="close2">&times;</span>
+        Hello pick team here
+        <form id="frm2" action="">
+          <label for="pickTeam">How Many Years of dodge ball experience</label>
+          <select id="teamC" name="teamC">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <input type="text" name="fname2" id='fname2' value=""><br>
+          </select><br>
+        </form>
+
+        <button onclick="moveToTeam()">Submit</button>
+      </div>
+    </div>
+
+    <div id="user-head">
+      <p>Click on Player Info Button</p>
+      <div id="user-info">
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal3" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close3">&times;</span>
+        <p>Please input data for player ranking</p>
+        <form id="frm3" action="">
+
+          <label for="full-name">Full name:(first last)</label>
+          <input type="text" id="full-name" name="full-name" value="John Doe"><br>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="15" max="90" value="22"><br>
+          <label for="skill">skill(example: Plumber)</label>
+          <input type="skill" id="skill" name="skill" value='Plumber'><br>
+          <label for="birth">Birth Place(example: Hillsboro, TX)</label>
+          <input type="birth" id="birth" name="birth" value='Hillsboro, TX'><br>
+
+
+        </form>
+
+
+
+        <button onclick="addPersonInfo()">Submit</button>
+      </div>
+
+
+
+    </div>
+    <script src='./main.js'></script>
+</body>
+
+</html>
