@@ -55,10 +55,22 @@
   }
   #intro-sec{
     grid-area: intro;
-    height: 60px;
+    padding:0;
+    margin: 0;
+    height: 80px;
     background-color: lightgrey ;
     text-align: center;
+    font-size: 10px;
+    color: red;
+    font-style: italic;
   }
+  #intro-sec p{
+    font-size: 20px;
+    color:black;    
+    font-style: normal;
+    font-style: bold;
+  }
+  
   #signups {
     grid-area:sign;
     height: 300px;
@@ -79,6 +91,10 @@
     border: blue;
     border-width: 2px;
     border-style: solid;
+    background-image: Url("./img/donkey.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
   }
 
   #redT  {
@@ -87,6 +103,10 @@
     border:red;
     border-width: 2px;
     border-style: solid;
+    background-image: Url("./img/elephants.JPG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
   }
 
   #user-head{

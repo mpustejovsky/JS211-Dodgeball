@@ -12,7 +12,11 @@
 
 <body>
   <div id="container">
-    <div id="intro-sec">Welcome to the Dodge Ball Registration System</div>
+    <div id="intro-sec">
+      <p>Welcome to the Dodge Ball Registration System</p>
+      Players shown in red are injured
+    </div>
+
     <div id="signups">
       List Of People
       <button id="add" onclick="addPerson()">Add Person</button>
@@ -25,11 +29,13 @@
       <ul id="players"></ul>
     </div>
     <div id="blueT">
-      <h4>Blue Team</h4>
+      Blue Team
+      <button id="addBlue" onclick="directAdd('Blue','donkey')">Add New Person Direct to Team</button>
       <ul id="blue"></ul>
     </div>
     <div id="redT">
-      <h4>Red Team</h4>
+      Red Team
+      <button id="addRed" onclick="directAdd('Red','elephant')">Add New Person Direct to Team</button>
       <ul id="red"></ul>
     </div>
 
@@ -134,16 +140,13 @@
 
 
         </form>
-
-
-
         <button onclick="addPersonInfo()">Submit</button>
       </div>
 
 
 
     </div>
-    <script src='./main.js'></script>
+    <script src='./main-index.js'></script>
 </body>
 
 </html>
